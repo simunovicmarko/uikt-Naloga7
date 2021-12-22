@@ -1,0 +1,1 @@
+export const MinisterstvoLogo: string = "https://i.ibb.co/jMW4JR7/Ministerstvo-Za-Zunanje-Zadeve.png";
