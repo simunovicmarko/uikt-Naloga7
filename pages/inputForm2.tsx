@@ -7,6 +7,7 @@ import { Form } from '../Interfaces/Form';
 import { addForm } from '../Functions/AddForm';
 import { Stanje } from '../Enums/Stanja';
 import { getDateString } from '../Functions/GetDate';
+import { DateInput } from '../Components/DateInput';
 // import {DayPicker} from 'react-day-picker';
 // import 'react-day-picker/lib/style.css';
 
@@ -73,8 +74,8 @@ export const InputForm2: FunctionComponent<Props> = () => {
                     <MyInput title='Priimek:' TBValue={priimek} TBSetValue={setPriimek} />
                     <MyInput title='Naslov:' TBValue={naslov} TBSetValue={setNaslov} />
                     <MyInput title='Država bivanja:' TBValue={DBivanja} TBSetValue={setDBivanja} />
-                    <MyInput title='Datum rojstva:' TBValue={DRojstva} TBSetValue={setDRojstva} />
-                    {/* <DayPicker/> */}
+                    {/* <MyInput title='Datum rojstva:' TBValue={DRojstva} TBSetValue={setDRojstva} /> */}
+                    <DateInput datum={DRojstva} setDatum={setDRojstva}/>
                     <MyInput title='Kraj rojstva:' TBValue={KRojstva} TBSetValue={setKRojstva} />
                     <MyInput title='Državljanstvo:' TBValue={drzavljanstvo} TBSetValue={setDrzvaljanstvo} />
                     <MyInput title='Številka osebne izkaznice:' TBValue={osebna} TBSetValue={setOsebna} />

@@ -63,7 +63,7 @@ export const oddaneVloge: FunctionComponent<Props> = () => {
                         userForms.map(form =>
                             <ListItem key={v4()} className='ListItem'>
                                 <ListItemText primary={`Vlagatelj: ${form.ime} ${form.priimek}`} />
-                                <ListItemText primary={`ID vloge: ${form.id}`} />
+                                <ListItemText primary={`ID vloge: ${form.id.length > 10 ? `${form.id.substring(0, 10)}...` : form.id}`} />
                                 <ListItemText primary={`Status: ${form.stanje}`} />
                                 <Button style={{ margin: "0px" }} href={`/vloga/${form.id}`}>
                                     <ArrowForwardIosIcon />

@@ -56,7 +56,7 @@ export const vloga: FunctionComponent<Props> = () => {
                             Odobritev <br /> zahteve
                         </Button>
                         <Button href="/" type="submit" variant='contained' color='error' className='nextBtn' onClick={() => handleSubmit(Stanje.Zavrnjeno)} >
-                            Odobritev <br /> zahteve
+                            Zavrnitev <br /> zahteve
                         </Button>
                     </div>
                     : null    
